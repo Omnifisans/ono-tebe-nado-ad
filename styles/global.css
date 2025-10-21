@@ -33,6 +33,7 @@ a {
 
 img {
   width: 100%;
+  height: auto; /* Добавлено для правильного соотношения сторон */
 }
 
 button {
@@ -42,4 +43,30 @@ button {
 
 address {
   font-style: normal;
+}
+
+/* Адаптивность для экранов шириной 1100px */
+@media (max-width: 1100px) {
+  body {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .header,
+  .cover,
+  .lots,
+  .about,
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .cover__title {
+    font-size: 80px;
+    letter-spacing: 20px;
+  }
+  
+  .lots__card-list {
+    justify-content: center;
+  }
 }
