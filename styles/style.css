@@ -67,7 +67,7 @@ body {
   position: relative;
   padding: 165px 50px 50px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url('https://images.unsplash.com/photo-1571902943206-227ab76b270d') center/cover no-repeat;
+              url('cover.jpg') center/cover no-repeat;
   color: white;
   display: flex;
   flex-direction: column;
@@ -152,6 +152,11 @@ body {
 .card-link {
   display: block;
   height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-5px);
 }
 
 .card {
@@ -167,15 +172,15 @@ body {
 }
 
 .card_type_picture {
-  background-image: url('https://content2.flowwow-images.com/data/flowers/524x524/32/1644592221_55937132.jpg');
+  background-image: url('card-lot-01.jpg');
 }
 
 .card_type_film {
-  background-image: url('https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_607973bec1749f03485b1729_6079743aa732f91847258b35/scale_1200');
+  background-image: url('card-lot-02.jpg');
 }
 
 .card_type_book {
-  background-image: url('https://cdn1.ozone.ru/s3/multimedia-2/c600/6714050474.jpg');
+  background-image: url('card-lot-03.jpg');
 }
 
 .card__title {
@@ -293,18 +298,20 @@ body {
 }
 
 .footer__social-link {
-  display: block;
-  width: 48px;
-  height: 48px;
-}
-
-.footer__social-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 48px;
+  height: 48px;
+  transition: opacity 0.3s ease;
+}
+
+.footer__social-link:hover {
+  opacity: 0.7;
+}
+
+.footer__social-link img {
   width: 100%;
   height: 100%;
-  background-color: transparent;
-  border: none;
-  font-size: 18px;
+  object-fit: contain;
 }
