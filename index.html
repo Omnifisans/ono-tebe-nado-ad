@@ -1,88 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аукцион Armcrown</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="nav">
+    <header class="header">
+        <nav class="nav">
             <a href="#">Главная</a>
             <a href="#lots">Лоты</a>
             <a href="#about">О нас</a>
-        </div>
+        </nav>
         <div class="logo">Armcrown</div>
-        <div class="address">
-            +7 (495) 123-65-57<br>
-            info@armcrown.com<br>
+        <address class="address">
+            <a href="tel:+74951236557">+7 (495) 123-65-57</a><br>
+            <a href="mailto:info@armcrown.com">info@armcrown.com</a><br>
             Москва, ул. Искусств, д. 15
-        </div>
-    </div>
+        </address>
+    </header>
     
-    <div class="cover">
-        <h1>Оно тебе надо — аукцион вещей в которых никто не нуждается</h1>
-        <p>Аукцион вещей, в котором никто не нуждается</p>
-        <button class="button">Сделать ставку</button>
-    </div>
-    
-    <div class="lots" id="lots">
-        <h2>Текущие лоты</h2>
+    <main>
+        <section class="cover">
+            <h1>Оно тебе надо — аукцион вещей в которых никто не нуждается</h1>
+            <p>Аукцион вещей, в котором никто не нуждается</p>
+            <button class="button">Сделать ставку</button>
+        </section>
         
-        <div class="lots-grid">
-            <div class="lot">
-                <a href="https://content2.flowwow-images.com/data/flowers/524x524/32/1644592221_55937132.jpg" target="_blank">
-                    <img src="https://content2.flowwow-images.com/data/flowers/524x524/32/1644592221_55937132.jpg" alt="Картина 'Закат в горах'">
-                </a>
-                <h3>Картина "Закат в горах"</h3>
-                <p>Масло, холст, 60×80 см, 2020 г.</p>
-                <p class="price">Стартовая цена: 150 000 руб.</p>
-            </div>
+        <section class="lots" id="lots">
+            <h2>Текущие лоты</h2>
             
-            <div class="lot">
-                <a href="https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_607973bec1749f03485b1729_6079743aa732f91847258b35/scale_1200" target="_blank">
-                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_607973bec1749f03485b1729_6079743aa732f91847258b35/scale_1200" alt="Скульптура 'Мыслитель'">
-                </a>
-                <h3>Скульптура "Мыслитель"</h3>
-                <p>Бронза, высота 45 см, 2018 г.</p>
-                <p class="price">Стартовая цена: 85 000 руб.</p>
+            <div class="lots-grid">
+                <article class="lot">
+                    <a href="https://content2.flowwow-images.com/data/flowers/524x524/32/1644592221_55937132.jpg" target="_blank">
+                        <img src="https://content2.flowwow-images.com/data/flowers/524x524/32/1644592221_55937132.jpg" alt="Картина 'Закат в горах'">
+                    </a>
+                    <h3>Картина "Закат в горах"</h3>
+                    <p>Масло, холст, 60×80 см, 2020 г.</p>
+                    <p class="price">Стартовая цена: 150 000 руб.</p>
+                </article>
+                
+                <article class="lot">
+                    <a href="https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_607973bec1749f03485b1729_6079743aa732f91847258b35/scale_1200" target="_blank">
+                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_607973bec1749f03485b1729_6079743aa732f91847258b35/scale_1200" alt="Скульптура 'Мыслитель'">
+                    </a>
+                    <h3>Скульптура "Мыслитель"</h3>
+                    <p>Бронза, высота 45 см, 2018 г.</p>
+                    <p class="price">Стартовая цена: 85 000 руб.</p>
+                </article>
+                
+                <article class="lot">
+                    <a href="https://cdn1.ozone.ru/s3/multimedia-2/c600/6714050474.jpg" target="_blank">
+                        <img src="https://cdn1.ozone.ru/s3/multimedia-2/c600/6714050474.jpg" alt="Антикварная ваза">
+                    </a>
+                    <h3>Антикварная ваза</h3>
+                    <p>Фарфор, ручная роспись, Китай, XIX век</p>
+                    <p class="price">Стартовая цена: 210 000 руб.</p>
+                </article>
             </div>
-            
-            <div class="lot">
-                <a href="https://cdn1.ozone.ru/s3/multimedia-2/c600/6714050474.jpg" target="_blank">
-                    <img src="https://cdn1.ozone.ru/s3/multimedia-2/c600/6714050474.jpg" alt="Антикварная ваза">
-                </a>
-                <h3>Антикварная ваза</h3>
-                <p>Фарфор, ручная роспись, Китай, XIX век</p>
-                <p class="price">Стартовая цена: 210 000 руб.</p>
+        </section>
+        
+        <section class="about" id="about">
+            <h2>Об аукционе</h2>
+            <div class="about-content">
+                <div class="about-logo">A</div>
+                <div class="about-text">
+                    <p>Здесь вы можете найти особенные лоты, которые вам точно не понадобятся в повседневной жизни. Тем не менее, эти вещи могут заинтересовать коллекционеров и любителей искусства.</p>
+                    <p>Наш аукцион специализируется на продаже необычных и редких предметов, которые сложно найти в обычных магазинах. Если вам ничего не нужно, но вы хотите что-то купить, наш аукцион — идеальное место для таких покупок.</p>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
     
-    <div class="about" id="about">
-        <h2>Об аукционе</h2>
-        <div class="about-content">
-            <div class="about-logo">A</div>
-            <div class="about-text">
-                <p>Здесь вы можете найти особенные лоты, которые вам точно не понадобятся в повседневной жизни. Тем не менее, эти вещи могут заинтересовать коллекционеров и любителей искусства.</p>
-                <p>Наш аукцион специализируется на продаже необычных и редких предметов, которые сложно найти в обычных магазинах. Если вам ничего не нужно, но вы хотите что-то купить, наш аукцион — идеальное место для таких покупок.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer">
+    <footer class="footer">
         <div class="footer-content">
-            <div class="footer-address">
-                +7 (495) 123-65-57<br>
-                info@armcrown.com<br>
+            <address class="footer-address">
+                <a href="tel:+74951236557">+7 (495) 123-65-57</a><br>
+                <a href="mailto:info@armcrown.com">info@armcrown.com</a><br>
                 Москва, ул. Искусств, д. 15
-            </div>
+            </address>
             
-            <div class="footer-menu">
+            <nav class="footer-menu">
                 <a href="#">Главная</a>
                 <a href="#lots">Лоты</a>
                 <a href="#about">О нас</a>
-            </div>
+            </nav>
             
             <div class="footer-social">
                 <a href="#">Instagram</a>
@@ -90,6 +93,6 @@
                 <a href="#">Twitter</a>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
