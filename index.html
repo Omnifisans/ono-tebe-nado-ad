@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аукцион Armcrown</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
             <a href="#lots">Лоты</a>
             <a href="#about">О нас</a>
         </nav>
-        <div class="logo">Armcrown</div>
+        <a href="#" class="logo">Armcrown</a>
         <address class="address">
             <a href="tel:+74951236557">+7 (495) 123-65-57</a><br>
             <a href="mailto:info@armcrown.com">info@armcrown.com</a><br>
@@ -23,49 +25,58 @@
     
     <main>
         <section class="cover">
-            <h1>Оно тебе надо — аукцион вещей в которых никто не нуждается</h1>
-            <p>Аукцион вещей, в котором никто не нуждается</p>
-            <button class="button">Сделать ставку</button>
-        </section>
-        
-        <section class="lots" id="lots">
-            <h2>Текущие лоты</h2>
-            
-            <div class="lots-grid">
-                <article class="lot">
-                    <a href="https://content2.flowwow-images.com/data/flowers/524x524/32/1644592221_55937132.jpg" target="_blank">
-                        <img src="https://content2.flowwow-images.com/data/flowers/524x524/32/1644592221_55937132.jpg" alt="Картина 'Закат в горах'">
-                    </a>
-                    <h3>Картина "Закат в горах"</h3>
-                    <p>Масло, холст, 60×80 см, 2020 г.</p>
-                    <p class="price">Стартовая цена: 150 000 руб.</p>
-                </article>
-                
-                <article class="lot">
-                    <a href="https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_607973bec1749f03485b1729_6079743aa732f91847258b35/scale_1200" target="_blank">
-                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_607973bec1749f03485b1729_6079743aa732f91847258b35/scale_1200" alt="Скульптура 'Мыслитель'">
-                    </a>
-                    <h3>Скульптура "Мыслитель"</h3>
-                    <p>Бронза, высота 45 см, 2018 г.</p>
-                    <p class="price">Стартовая цена: 85 000 руб.</p>
-                </article>
-                
-                <article class="lot">
-                    <a href="https://cdn1.ozone.ru/s3/multimedia-2/c600/6714050474.jpg" target="_blank">
-                        <img src="https://cdn1.ozone.ru/s3/multimedia-2/c600/6714050474.jpg" alt="Антикварная ваза">
-                    </a>
-                    <h3>Антикварная ваза</h3>
-                    <p>Фарфор, ручная роспись, Китай, XIX век</p>
-                    <p class="price">Стартовая цена: 210 000 руб.</p>
-                </article>
+            <h1 class="cover__title">Оно тебе надо — аукцион вещей в которых никто не нуждается</h1>
+            <div class="cover__description">
+                <p class="cover__description-text">Аукцион вещей, в котором никто не нуждается</p>
+                <button class="bet-button">Сделать ставку</button>
             </div>
         </section>
         
+        <section class="lots" id="lots">
+            <h2 class="lots__heading">Текущие лоты</h2>
+            
+            <ul class="lots__card-list">
+                <li class="lots__card-list-item">
+                    <a href="https://content2.flowwow-images.com/data/flowers/524x524/32/1644592221_55937132.jpg" target="_blank" class="card-link">
+                        <article class="card card_type_picture">
+                            <div class="overlay"></div>
+                            <h3 class="card__title">Картина "Закат в горах"</h3>
+                            <p class="card__text">Масло, холст, 60×80 см, 2020 г.</p>
+                        </article>
+                    </a>
+                </li>
+                
+                <li class="lots__card-list-item">
+                    <a href="https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_607973bec1749f03485b1729_6079743aa732f91847258b35/scale_1200" target="_blank" class="card-link">
+                        <article class="card card_type_film">
+                            <div class="overlay"></div>
+                            <h3 class="card__title">Скульптура "Мыслитель"</h3>
+                            <p class="card__text">Бронза, высота 45 см, 2018 г.</p>
+                        </article>
+                    </a>
+                </li>
+                
+                <li class="lots__card-list-item">
+                    <a href="https://cdn1.ozone.ru/s3/multimedia-2/c600/6714050474.jpg" target="_blank" class="card-link">
+                        <article class="card card_type_book">
+                            <div class="overlay"></div>
+                            <h3 class="card__title">Антикварная ваза</h3>
+                            <p class="card__text">Фарфор, ручная роспись, Китай, XIX век</p>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
         <section class="about" id="about">
-            <h2>Об аукционе</h2>
-            <div class="about-content">
-                <div class="about-logo">A</div>
-                <div class="about-text">
+            <div class="about__column">
+                <div class="about__logo">
+                    <div class="about__logo-image">A</div>
+                </div>
+            </div>
+            <div class="about__column">
+                <h2 class="about__title">Об аукционе</h2>
+                <div class="about__text">
                     <p>Здесь вы можете найти особенные лоты, которые вам точно не понадобятся в повседневной жизни. Тем не менее, эти вещи могут заинтересовать коллекционеров и любителей искусства.</p>
                     <p>Наш аукцион специализируется на продаже необычных и редких предметов, которые сложно найти в обычных магазинах. Если вам ничего не нужно, но вы хотите что-то купить, наш аукцион — идеальное место для таких покупок.</p>
                 </div>
@@ -74,25 +85,43 @@
     </main>
     
     <footer class="footer">
-        <div class="footer-content">
-            <address class="footer-address">
-                <a href="tel:+74951236557">+7 (495) 123-65-57</a><br>
-                <a href="mailto:info@armcrown.com">info@armcrown.com</a><br>
-                Москва, ул. Искусств, д. 15
-            </address>
-            
-            <nav class="footer-menu">
-                <a href="#">Главная</a>
-                <a href="#lots">Лоты</a>
-                <a href="#about">О нас</a>
-            </nav>
-            
-            <div class="footer-social">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-            </div>
-        </div>
+        <address class="footer__address address">
+            <a href="tel:+74951236557">+7 (495) 123-65-57</a><br>
+            <a href="mailto:info@armcrown.com">info@armcrown.com</a><br>
+            Москва, ул. Искусств, д. 15
+        </address>
+        
+        <nav class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-list-item">
+                    <a href="#" class="footer__menu-link footer__menu-link_active">Главная</a>
+                </li>
+                <li class="footer__menu-list-item">
+                    <a href="#lots" class="footer__menu-link">Лоты</a>
+                </li>
+                <li class="footer__menu-list-item">
+                    <a href="#about" class="footer__menu-link">О нас</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+                <a href="#" class="footer__social-link">
+                    <span class="footer__social-icon">YT</span>
+                </a>
+            </li>
+            <li class="footer__social-list-item">
+                <a href="#" class="footer__social-link">
+                    <span class="footer__social-icon">VK</span>
+                </a>
+            </li>
+            <li class="footer__social-list-item">
+                <a href="#" class="footer__social-link">
+                    <span class="footer__social-icon">TG</span>
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>
