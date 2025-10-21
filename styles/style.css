@@ -16,6 +16,24 @@ body {
   align-items: center;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
 .nav {
   display: flex;
   gap: 32px;
