@@ -10,43 +10,45 @@
 </head>
 <body>
     <header class="header">
-    <nav class="nav">
-        <a href="#">Главная</a>
-        <a href="#lots">Лоты</a>
-        <a href="#about">О нас</a>
-    </nav>
-    
-    <!-- Логотип обернут в ссылку -->
-    <a href="https://www.christies.com" class="logo" target="_blank">
-        <img src="https://logoipsum.com/logo/logo-1.svg" alt="Armcrown Аукцион" width="200" height="40">
-    </a>
-    
-    <address class="address">
-        <a href="tel:+74951236557">+7 (495) 123-65-57</a><br>
-        <a href="mailto:info@armcrown.com">info@armcrown.com</a><br>
-        Москва, ул. Искусств, д. 15
-    </address>
-</header>
+        <nav class="nav">
+            <a href="#">главная</a>
+            <a href="#lots">посмотреть лоты</a>
+            <a href="#about">об аукционе</a>
+        </nav>
+        <a href="#" class="logo">
+            <img src="logo-black.svg" alt="Armcrown Аукцион" class="logo-image">
+        </a>
+        <address class="address">
+            <a href="tel:+99999999999">+9 999 999 9999</a><br>
+            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+            наб. Принсенграхт 263-
+            <p>265, Амстердам</p>
+        </address>
+    </header>
     
     <main>
         <section class="cover">
-            <h1 class="cover__title">Оно тебе надо — аукцион вещей в которых никто не нуждается</h1>
-            <div class="cover__description">
-                <p class="cover__description-text">Аукцион вещей, в котором никто не нуждается</p>
-                <button class="bet-button">Сделать ставку</button>
+            <div class="cover__container">
+                <h1 class="cover__title1">Оно</h1>
+                <h1 class="cover__title2">Тебе</h1>
+                <h1 class="cover__title3">Надо</h1>
+                <div class="cover__description">
+                    <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+                    <button class="bet-button">Сделать ставку</button>
+                </div>
             </div>
         </section>
         
         <section class="lots" id="lots">
-            <h2 class="lots__heading">Текущие лоты</h2>
+            <h2 class="lots__heading">ЛОТЫ</h2>
             
             <ul class="lots__card-list">
                 <li class="lots__card-list-item">
                     <a href="card-lot-01.jpg" target="_blank" class="card-link">
                         <article class="card card_type_picture">
                             <div class="overlay"></div>
-                            <h3 class="card__title">Антикварная лупа XIX века</h3>
-                            <p class="card__text">Серебро, ручная гравировка, Франция, 1870 г.</p>
+                            <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                            <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
                         </article>
                     </a>
                 </li>
@@ -55,8 +57,8 @@
                     <a href="card-lot-02.jpg" target="_blank" class="card-link">
                         <article class="card card_type_film">
                             <div class="overlay"></div>
-                            <h3 class="card__title">"Улисс" Джеймса Джойса</h3>
-                            <p class="card__text">Первое издание, 1922 г., коллекционное состояние</p>
+                            <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                            <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
                         </article>
                     </a>
                 </li>
@@ -65,25 +67,27 @@
                     <a href="card-lot-03.jpg" target="_blank" class="card-link">
                         <article class="card card_type_book">
                             <div class="overlay"></div>
-                            <h3 class="card__title">Абстрактная композиция</h3>
-                            <p class="card__text">Холст, масло, 80×60 см, современный художник</p>
+                            <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                            <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
                         </article>
                     </a>
                 </li>
             </ul>
+            
+            <a href="#" class="lots__look-more-link">посмотреть больше</a>
         </section>
         
         <section class="about" id="about">
-            <div class="about__column">
+            <div class="about__column1">
                 <div class="about__logo">
-                    <div class="about__logo-image">A</div>
+                    <img src="logo-white.svg" alt="Логотип Armcrown" class="about__logo-image">
                 </div>
             </div>
-            <div class="about__column">
+            <div class="about__column2">
                 <h2 class="about__title">Об аукционе</h2>
                 <div class="about__text">
-                    <p>Здесь вы можете найти особенные лоты, которые вам точно не понадобятся в повседневной жизни. Тем не менее, эти вещи могут заинтересовать коллекционеров и любителей искусства.</p>
-                    <p>Наш аукцион специализируется на продаже необычных и редких предметов, которые сложно найти в обычных магазинах. Если вам ничего не нужно, но вы хотите что-то купить, наш аукцион — идеальное место для таких покупок.</p>
+                    <p class="here__you">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+                    <p class="very__hard">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
                 </div>
             </div>
         </section>
@@ -91,21 +95,22 @@
     
     <footer class="footer">
         <address class="footer__address address">
-            <a href="tel:+74951236557">+7 (495) 123-65-57</a><br>
-            <a href="mailto:info@armcrown.com">info@armcrown.com</a><br>
-            Москва, ул. Искусств, д. 15
+            <a href="tel:+99999999999">+9 999 999 9999</a><br>
+            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+            наб. Принсенграхт 263-265,
+            <p>Амстердам</p>
         </address>
         
         <nav class="footer__menu">
             <ul class="footer__menu-list">
                 <li class="footer__menu-list-item">
-                    <a href="#" class="footer__menu-link footer__menu-link_active">Главная</a>
+                    <a href="#" class="footer__menu-link footer__menu-link_active">главная</a>
                 </li>
                 <li class="footer__menu-list-item">
-                    <a href="#lots" class="footer__menu-link">Лоты</a>
+                    <a href="#lots" class="footer__menu-link">посмотреть лоты</a>
                 </li>
                 <li class="footer__menu-list-item">
-                    <a href="#about" class="footer__menu-link">О нас</a>
+                    <a href="#about" class="footer__menu-link">об аукционе</a>
                 </li>
             </ul>
         </nav>
@@ -113,17 +118,17 @@
         <ul class="footer__social-list">
             <li class="footer__social-list-item">
                 <a href="#" class="footer__social-link">
-                    <img src="yt.svg" alt="YouTube" width="48" height="48">
+                    <img src="yt.svg" alt="YouTube" class="footer__social-icon">
                 </a>
             </li>
             <li class="footer__social-list-item">
                 <a href="#" class="footer__social-link">
-                    <img src="vk.svg" alt="VKontakte" width="48" height="48">
+                    <img src="vk.svg" alt="VK" class="footer__social-icon">
                 </a>
             </li>
             <li class="footer__social-list-item">
                 <a href="#" class="footer__social-link">
-                    <img src="pinterest.svg" alt="Pinterest" width="48" height="48">
+                    <img src="pinterest.svg" alt="Pinterest" class="footer__social-icon">
                 </a>
             </li>
         </ul>
