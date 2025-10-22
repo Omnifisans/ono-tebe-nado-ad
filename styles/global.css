@@ -8,7 +8,8 @@
 body {
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
+  background-color: #ffffff;
 }
 
 h1,
@@ -33,7 +34,7 @@ a {
 
 img {
   width: 100%;
-  height: auto; /* Добавлено для правильного соотношения сторон */
+  height: auto;
 }
 
 button {
@@ -57,8 +58,8 @@ address {
   .lots,
   .about,
   .footer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .cover__title {
