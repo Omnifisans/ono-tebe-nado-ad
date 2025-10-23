@@ -18,12 +18,13 @@ body {
 
 .nav {
   display: flex;
-  gap: 32px;
+  gap: 15px;
   justify-self: start;
 }
 
 .nav a:hover {
   text-decoration: underline;
+
 }
 
 .logo {
